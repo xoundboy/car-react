@@ -1,0 +1,12 @@
+.Road {
+	background: #3b43ff;
+	height: 100vh;
+	white-space: nowrap;
+	position: absolute;
+
+	.bar {
+		position: relative;
+		background-color: gray;
+		display: inline-block;
+	}
+}
