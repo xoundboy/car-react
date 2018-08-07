@@ -25,12 +25,13 @@ export default class Car extends Component {
 	}
 
 	componentDidUpdate(){
+		// todo - add check - only when viewport changed
 		this.setMaxOffsets();
 	}
 
 	componentWillReceiveProps(nextProps){
 		this.setState({
-			positionX: 50,
+			positionX: 50, // todo, this needs to be dynamic and respond to viewport size changes
 			positionY: (nextProps.viewport.height / 2) - this.carDiv.clientHeight
 		});
 	}
