@@ -1,5 +1,4 @@
 .Car {
-  margin-top: 20px;
   position: absolute;
   height: 110px;
   width: 150px; }
@@ -20,7 +19,7 @@
       position: absolute;
       top: 10px;
       left: 20px;
-      background: Dodgerblue;
+      background: #feff9e;
       height: 20px;
       width: 30px; }
   .Car .wheel {
@@ -35,7 +34,7 @@
       left: 90px; }
     .Car .wheel .hub {
       position: absolute;
-      background: grey;
+      background: #74b101;
       border-radius: 10px;
       height: 20px;
       width: 20px;

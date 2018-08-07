@@ -206,29 +206,3 @@ function updateCarPosition() {
 	car.style.top = y + "px";
 }
 
-window.addEventListener("keydown", function(event){
-	switch(event.key) {
-		case "ArrowRight": arrowRightPressed = true; break;
-		case "ArrowLeft": arrowLeftPressed = true; break;
-		case "ArrowUp": arrowUpPressed = true; break;
-		case "ArrowDown": arrowDownPressed = true; break;
-		case " ":
-			if (started)
-				pauseGame();
-			else
-				startGame();
-	}
-}, true);
-
-window.addEventListener("keyup", function(event){
-	switch(event.key) {
-		case "ArrowRight": arrowRightPressed = false; break;
-		case "ArrowLeft": arrowLeftPressed = false; break;
-		case "ArrowUp": arrowUpPressed = false; break;
-		case "ArrowDown": arrowDownPressed = false; break;
-	}
-}, true);
-
-window.addEventListener("resize", function(){
-	setViewport();
-}, true);
